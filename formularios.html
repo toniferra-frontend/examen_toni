@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+
+  </head>
+  <body>
+    <header>
+      <!-- **** Contenido Gráfico **** -->
+      <!-- Primer opción siempre es SVG -->
+
+      <!-- Segunda opción siempre WebP -->
+      <!-- Tercera opción es JPG -->
+      <!-- La peor PNG ó GIF -->
+      <!-- SIN RETINA DISPLA -->
+      <picture>
+        <!-- móvil -->
+        <source
+          srcset=""
+          media="(min-width:320px) and (max-width:450px)"
+        />
+
+        <!-- ipad -->
+        <source
+          srcset="img/tablet/banner.jpg 1x, img/tablet/banner@2x.jpg 2x"
+          media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
+        />
+
+        <!-- escritorio -->
+        <source
+          srcset=""
+          media="(min-width:1000px) and (max-width:1366px)"
+        />
+
+        <!-- escritorios Grandes -->
+        <source srcset="" media="(min-width:1367px)" />
+
+        <!-- Imagen de respaldo -->
+        <img src="img/desktop/banner.jpg" alt="banner" />
+      </picture>
+    </header>
+    <main>
+      <form name="desayuno" method="POST" data-netlify="true">
+        <label for="azucar">¿Cuántos terrones de azucar te gustan en e café?</label>
+        <input type="number" name="azucar" min="1" max="10">
+
+
+        
+      </form>
+    </main>
+  </body>
+</html>
