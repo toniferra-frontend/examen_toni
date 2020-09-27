@@ -38,6 +38,8 @@
     --color-black: #1C1C1F;
     --color-white: #fff;
 
+    
+
     /* Tipografía */
     --h1: 4rem;
     --h2: 3rem;
@@ -49,12 +51,25 @@
     /* Tamaños */
     --section-principal: 931px; /* ancho de todo mi diseño 58.188rem */ 
     --section-borderRadius: 60px;
-    --box-borderRadius: 40px;
+    --box-borderRadius: 20px;
+
+    --font-size-pequena: 4vmin;
+    --font-size-mediana: 7vmin;
+    --font-size-grande: 8vmax;
+    --font-size-super-grande: 12vmax;
+
+    --color-precio: #8D3B95;
+    /* --anchura-precio-texto: 100px; */
+    --background-color-parrafo: #FAC8FF;
+
+
+
 }
 
 
 /* ******************************** */
 body{
+    
     background-color: var(--color-pink01);
     display: flex;
     justify-content: center;
@@ -70,27 +85,218 @@ body{
     align-items: center;
     padding: 1rem;
 }
-.superior{
+.superior
+{
     width: 100%;
     background-color: #fff;
     border-radius: var(--section-borderRadius);
+
+    padding-left: 6vmin;
+    padding-right: 6vmin;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
 }
-.inferior{
+.inferior
+{
     width: 90%;
+    margin-top: 8vmin;
 }
 
 .inferior_parrafo{
     text-align: justify;
+
+    background-color: var(--background-color-parrafo);
+    font-size: var(--font-size-pequena);
+    /* line-height: 42px; */
+    color: #5C5C5C;
+    text-align: center;
+
+    border-radius: 0px 10px 10px 10px;
+
+    padding: 3vmin;
+    /* margin-top: var(--margin-top-5); */
+
+    display: flex;
+    align-items: center;
+
+
 }
 
-.inferior_botonEnviar{
+.inferior_botonEnviar
+{
+    margin-top: 5vmin;
     text-decoration: none;
     text-align: center;
     display: block;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1.2rem 0;
     background-color: var(--color-black);
     border-radius: var(--box-borderRadius);
     color: #fff;
+    font-size: 7vmin;
 
 }
+
+.superior_ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.superior_1
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconoAtras
+{
+    width: 10vmin;
+    flex-grow: 0;
+
+}
+
+.textoCentrado
+{
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+    font-size: 12vmin;
+}
+
+.superior_ul_avatar
+{
+    margin-top: 5vmin;
+    border-radius: 50%;
+
+    align-self: center;
+
+}
+
+.superior_ul_textoAvatar
+{
+    margin-top: 5vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.formatoNombre
+{
+    font-size: var(--font-size-mediana);
+
+}
+
+.formatoEmail
+{
+
+    font-size: var(--font-size-pequena);
+    font-style: italic;
+}
+
+button
+{
+    padding: 0;
+    line-height: inherit;
+    border-radius: 0;
+    background-color: transparent;
+
+}
+
+.rectMetodo
+{
+
+    margin-top: 6vmin;
+
+    background-color: #FAF5FB;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2vmin 5vmin 2vmin 12vmin;
+
+    
+
+}
+
+
+
+.botones
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    
+}
+
+.precio
+{
+    font-size: var(--font-size-mediana);
+    color: var(--color-precio);
+    
+    flex-grow: 2;
+
+
+}
+
+.metodo
+{
+    
+    color: var(--color-precio);
+    font-size: var(--font-size-mediana);
+
+    flex-grow: 0.2;
+    text-align: center;
+    
+    
+}
+
+
+.resultado
+{
+    margin-top: 6vmin;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultadoCifra
+{
+    font-size: var(--font-size-super-grande);
+
+}
+
+.resultadoEuro
+{
+    font-size: var(--font-size-grande);
+}
+
+
+.nombreProducto
+{
+    font-size: var(--font-size-mediana);
+    margin-bottom: 14vmin;
+    text-align: center;
+}
+
+
+
