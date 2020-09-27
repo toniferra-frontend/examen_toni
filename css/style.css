@@ -4,9 +4,9 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
+    font-family: "Roboto-Medium";
+    src: url("../font/Roboto-Medium.woff2") format("woff2"),
+         url("../font/Roboto-Medium.woff") format("woff");
 }
 @font-face {
     font-family: "";
@@ -62,6 +62,8 @@
     /* --anchura-precio-texto: 100px; */
     --background-color-parrafo: #FAC8FF;
 
+    --font-family-default: "Roboto-Medium";
+    --font-family-aux: "sans-serif"
 
 
 }
@@ -70,6 +72,7 @@
 /* ******************************** */
 body{
     
+    font-family: var(--font-family-default), var(--font-family-aux);
     background-color: var(--color-pink01);
     display: flex;
     justify-content: center;
