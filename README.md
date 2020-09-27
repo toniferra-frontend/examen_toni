@@ -1,3 +1,11 @@
+WEB
+========
+<a href="https://sosan.github.io/examen_toni/index.html">Web con Github Page</a><br>
+<a href="https://elastic-ritchie-845907.netlify.app/">Web con Netlify</a><br>
+
+<img src="./img/web.png">
+
+
 # EXAMEN Toni
 ##### Principio del examen, para practicar
 
