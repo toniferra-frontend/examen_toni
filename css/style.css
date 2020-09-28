@@ -2,95 +2,62 @@
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
 
-/* Tipografía */
+
 @font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
-}
-@font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
-}
-@font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
+    /* Roboto-normal */
+    font-family: "robotoRegular";
+    src: url("../font/roboto-regular-webfont.woff2") format("woff2"),
+         url("../font/roboto-regular-webfont.woff") format("woff");
+
+    /*  Roboto-italic  */
+    font-family: "robotoItalic";
+    src: url("../font/roboto-italic-webfont.woff2") format("woff2"),
+         url("../font/roboto-italic-webfont.woff") format("woff");
 }
 
 /* ******************************** */
-/* VARIABLES */
-/* ******************************** */
+
+/* Colores */
 
 :root{
+/* color body */
+     --color-body: #E5E5E5;
+/* color del rectangulo */
+     --color01: #F7F0F7;
+/* color del rectangulo interior */
+     --color02: #ffff;
 
-    /* Colores */
-    /* Utilizado en el body */
-    --color-pink01: #F2E8F3;
-    /* Utilizado en el section padre */
-    --color-pink02: #F7F0F7;
-    /* Utilizado en la zona intermedia del precio, paypal*/
-    --color-pink03: #FAF5FB;
-    /* Utilizado en el texto y en la forma encima del boton enviar */
-    --color-pink04: #FAC8FF;
-    /* este color se ha utilizado en el boton enviar */
-    --color-black: #1C1C1F;
-    --color-white: #fff;
 
-    /* Tipografía */
-    --h1: 4rem;
-    --h2: 3rem;
-    --h3: 2rem;
-    --h4: 1rem; /* 16px */
-    --h5: 0.5rem;
-    --h6: 0.35rem;
+/* color tipografia */
 
-    /* Tamaños */
-    --section-principal: 931px; /* ancho de todo mi diseño 58.188rem */ 
-    --section-borderRadius: 60px;
-    --box-borderRadius: 40px;
+/*  colores de las letras */
+     --color03:  #000000;
+/* colores de las letras pay-pal */
+     --color04: #8D3B95;
+/* colores de las letras del texto */
+     --color05: #5C5C5C;
+/*  color del background del texto */
+     --color06: #FAC8FF;
+ /* color del background de paypla */
+     --color07: #FAF5FB;
+
+
+/* color del a "enviar" ojo que lleva doble variante */
+     --color03: var(--color-enviar #1C1C1F);
+
+/* border radius */
+/* border radius-section */
+     --border-radius01: 60px;
+
+
+/* estilo de fuentes */
+     /* fuente roboto regular */
+      --roboto01: "robotoRegular", sans-serif;
+      /* fuente robot italic */
+      --roboto02: "robotoItalic", sans-serif;
+
 }
 
 
 /* ******************************** */
-body{
-    background-color: var(--color-pink01);
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-}
 
-.sectionPrincipal{
-    width: var(--section-principal);
-    background-color: var(--color-pink02);
-    border-radius: var(--section-borderRadius);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-.superior{
-    width: 100%;
-    background-color: #fff;
-    border-radius: var(--section-borderRadius);
-}
-.inferior{
-    width: 90%;
-}
-
-.inferior_parrafo{
-    text-align: justify;
-}
-
-.inferior_botonEnviar{
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    width: 100%;
-    padding: 2rem 0;
-    background-color: var(--color-black);
-    border-radius: var(--box-borderRadius);
-    color: #fff;
-
-}

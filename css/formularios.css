@@ -1,0 +1,54 @@
+/* *********************************** */
+/* *** Estilos SOLO para index.html *** */
+/* *********************************** */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.numero_personas{
+    display: flex;
+    margin: 10px;
+    padding: 0px;
+
+}
+
+.numero_personas_label{
+    margin: 0px;
+}
+
+.tipos_desayuno{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+
+}
+
+.americano, .Continental, .De_la_tierra, .vegano{
+    display: flex;
+    justify-content: space-evenly;
+}

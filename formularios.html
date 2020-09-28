@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
 
@@ -23,34 +24,58 @@
       <picture>
         <!-- móvil -->
         <source
-          srcset=""
-          media="(min-width:320px) and (max-width:450px)"
+          srcset="img/smartphone/americano.jpg 1x, img/smartphone/americano@2x.jpg 2x, img/smartphone/americano@3x.jpg 3x"
+          media="(min-width:320px) and (max-width:450px) and (orientation: portrait)"
         />
 
         <!-- ipad -->
         <source
-          srcset="img/tablet/banner.jpg 1x, img/tablet/banner@2x.jpg 2x"
-          media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
+          srcset="img/tablet/churros.jpg 1x, img/tablet/churros@2x.jpg 2x"
+          media="(min-width:451px) and (max-width:1025px) and (orientation: portrait)"
         />
 
         <!-- escritorio -->
         <source
-          srcset=""
-          media="(min-width:1000px) and (max-width:1366px)"
+          srcset="img/desktop/desayuno_saludable.jpg 1x, img/desktop/desayuno_saludable@2x.jpg 2x"
+          media="(min-width:1026px) and (max-width:1366px)"
         />
 
         <!-- escritorios Grandes -->
-        <source srcset="" media="(min-width:1367px)" />
+        <source srcset="img/desktop/desayuno_saludable@2x.jpg" media="(min-width:1367px)" />
 
         <!-- Imagen de respaldo -->
-        <img src="img/desktop/banner.jpg" alt="banner" />
+        <img src="img/tablet/churros@2x.jpg" alt="banner" />
       </picture>
     </header>
     <main>
-      <form name="desayuno" method="POST" data-netlify="true">
-        <label for="azucar">¿Cuántos terrones de azucar te gustan en e café?</label>
-        <input type="number" name="azucar" min="1" max="10">
+      <h1 class="bienvenida_h1">¿Con ganas de un buen desayuno?</h1>
 
+      <form name="desayuno" method="POST" data-netlify="true">
+        
+        <ul class="numero_personas">
+        <li> <label class="numero_personas_label" for="numero de personas"> Numero de personas (10max)</label></li>
+        <li> <input type="number" name="personas" min="1" max="10" checked></li>
+        </ul>
+
+        <label for="hora de llegada">Prevision de llegada</label> 
+        <input type="date"  name="hora de lleganda">
+
+        <ul class="tipos_desayuno">
+           <label for="tipo de desayuno">¿Que tipo de desayuno os gustaria desayunar?</label></li>
+           <li class="americano"> <label for="tipo de desayuno">Americano</label>
+            <input type="radio" name="tipo de desayuno" id=""></li>
+           <li class="Continental"> <label for="tipo de desayuno">Continental</label>
+            <input type="checkbox" name="tipo de desayuno" id=""></li>
+           <li class="De_la_tierra"><label for="tipo de desayuno">De la tierra</label>
+            <input type="radio" name="tipo de desayuno" id=""></li> 
+           <li class="vegano"> <label for="tipo de desayuno">Vegano</label>
+           <input type="checkbox" name="tipo de desayuno"></li>
+      </ul>
+
+         <label for="preferecias desayuno">¿Que no puede faltar en su desayuno?</label>
+         <textarea name="preferencias" id="" cols="30" rows="10">Escriba aqui sus preferencias</textarea>
+
+          
 
         
       </form>
