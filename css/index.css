@@ -1,9 +1,125 @@
 /* *********************************** */
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
+body{
+    color:var(--color-texto);
+    font-family:"quicksand_book";
+    font-size: var(--h4);
+   
+}
+
+.superior{
+    padding:var(--padd)
+}
+li{
+    list-style: none;
+    margin:0;
+}
+ul{
+    padding-inline-start: 0;
+}
+
+/* caja de avatar y carrito */
+.superior_usuario{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+    padding:10px;
+    font-size: var(--h3);
+    background: radial-gradient(circle, #fac8ff, #ecbaf1, #ddade2, #cf9fd4, #c192c6);;
+    border-radius:20px;
+}
+.avatar{
+    border-radius: 50%;
+    width: 10vw;
+}    
+h3{
+color:var(--color-white);
+}
+
+.carrito{
+    width: 5vw;
+   
+}
+
+
+
+/* li zapatos */
+.producto{
+    text-align: center;
+    font-size: var(--h1);
+    padding:var(--padd);
+}
+
+.producto_zapatos{
+    display: flex;
+    justify-content: center;
+}
+
+.zapatos{
+    border-radius:20px;
+    border: 5px solid 
+}
+
+
+/* colores y bordes formulario */
 
 form{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
+    padding:10px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: var(--padd);
+    background-color:var(--color-texto);
+    color:white;
+}
+
+/* bordes para input select y boton */
+.talla input, select, button{
+    border:0;
+    color:var(--color-texto);
+    border-radius: 10px;
+}
+
+
+/* zapatos descripcion */
+.zapatos_descrip{
+    padding: var(--padd);
+    text-align: center;
+}
+
+/* texto domicilio */
+.domicilio{
+    text-decoration: underline;
+    font-size: 24px;
+    padding: var(--padd);
+    text-align: center;
+font-weight: bold;
+}
+
+/* posicion de input formulario registro */
+.inferior_domicilio input{
+    text-align: center;
+    width: 90%;
+    border:0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.inferior_domicilio button{
+    
+    padding: 10px;
+    width: 45%;
+    margin: 45px 10px 10px 10px;
+}
+
+/* cambio de color de botones */
+a:hover{
+    background-color: var(--color-texto);
+    color: black;
+}
+
+button:hover{
+    background-color: grey;
+    color: black;
 }

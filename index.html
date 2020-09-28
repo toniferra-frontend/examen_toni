@@ -1,53 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <!-- SEO = Básico -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO = Redes Sociales -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- SEO = Básico -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- SEO = Redes Sociales -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <section class="sectionPrincipal">
-      <article class="superior">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </article>
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
-      <article class="inferior">
-        <p class="inferior_parrafo">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae animi, harum quia ex expedita sint eligendi qui obcaecati et maxime dolorem, provident nobis praesentium earum aut, tempore necessitatibus ad?
-        </p>
-        <a href="#" class="inferior_botonEnviar">Enviar</a>
-      </article>
-    </section>
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
 
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+<body>
+  <!-- *** ESTRUCTURA SEMÁNTICA *** -->
+  <section class="sectionPrincipal">
+    <article class="superior">
+      <ul>
+        <li class="superior_usuario">
+          <picture>
+            <!-- móvil -->
+            <source class="avatar" srcset="/img/smartphone/yo.jpg 1x,
+                img/smartphone/yo@2x.jpg 2x,
+                img/smartphone/yo@3x.jpg 3x," media="(min-width:320px) and (max-width:450px)" />
+
+            <!-- ipad -->
+            <source srcset="img/tablet/yo.jpg 1x,
+                img/tablet/yo@2x.jpg 2x"
+              media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)" />
+
+            <!-- escritorio -->
+            <source srcset="img/desktop/yo.jpg 1x,
+                img/desktop/yo@2x.jpg 2x" media="(min-width:1000px) and (max-width:1366px)" />
+
+            <!-- escritorios Grandes -->
+            <source srcset="" media="(min-width:1367px)" />
+
+            <!-- Imagen de respaldo -->
+            <img class="avatar" src="img/desktop/yo.jpg" alt="banner" />
+          </picture>
+          <h3>Nieves Bolívar</h3>
+
+          <img class="carrito" src="img/svg/carro-de-la-compra 1.svg" alt="">
+
+
+
+        </li>
+        <li class="producto">Zapatos de tacón</li>
+        <li class="producto_zapatos">
+          <picture>
+            <!-- móvil -->
+            <source srcset="/img/smartphone/zapatos.jpg 1x,
+                img/smartphone/zapatos@2x.jpg 2x,
+                img/smartphone/zapatos@3x.jpg 3x," media="(min-width:320px) and (max-width:450px)" />
+
+            <!-- ipad -->
+            <source srcset="img/tablet/zapatos.jpg 1x,
+                img/tablet/zapatos@2x.jpg 2x"
+              media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)" />
+
+            <!-- escritorio -->
+            <source srcset="img/desktop/zapatos.jpg 1x,
+                img/desktop/zapatos@2x.jpg 2x" media="(min-width:1000px) and (max-width:1366px)" />
+
+            <!-- escritorios Grandes -->
+            <source srcset="" media="(min-width:1367px)" />
+
+            <!-- Imagen de respaldo -->
+            <img class="zapatos" src="img/desktop/zapatos.jpg" alt="banner" />
+          </picture>
+
+
+        </li>
+        <li>
+          <li class="zapatos_descrip">Zapatos de salón fabricado en piel en varios colores. Un básico que no puede faltar en tu armario.
+            Altura de tacón 10cm</li>
+          <form action="post" class="talla">
+            <label for="talla">Selecciona tu talla</label>
+            <input type="number" min="35" max="41">
+
+            <label for="color">
+              Selecciona el color
+            </label>
+            <select name="color" id="">
+              <option value="blanco" >Blanco</option>
+              <option value="negro" style="color:black">Negro</option>
+              <option value="azulmarino" style="color:blue">Azul Marino</option>
+              <option value="rojo" style="color:red">Rojo</option>
+            </select>
+            <button type="submit">Añadir al carrito</button>
+          </form>
+        </li>
+        
+          <article class="inferior_domicilio">
+          <li class="domicilio">Te lo llevamos a casa</li>
+
+          <li>
+            <form action="post">
+
+              <li><label for="nombre">
+                Nombre y apellidos
+              </label></li>
+              <li><input type="text" name="nombre" placeholder="Introduce tu nombre y apellidos"></li>
+
+              <li><label for="telefono">
+                Teléfono
+              </label></li>
+              <li><input type="number" name="telefono" placeholder="Introduce nº de teléfono"></li>
+
+              <li><label for="email">
+                Email
+              </label></li>
+              <li><input type="email" name="email" placeholder="Introduce email"></li>
+
+              <li><label for="direccion">
+                Dirección
+              </label></li>
+              <li><input type="text" name="direccion" placeholder="Introduce tu calle y número"></li>
+
+              <li><label for="provincia">
+                Provincia
+              </label></li>
+              <li><input type="text" name="provincia" placeholder="Introduce tu provincia"></li>
+
+              <li><label for="cp">
+                Código postal
+              </label></li>
+            <li><input type="text" name="cp" width="50"placeholder="Introduce tu código postal"></li>
+       
+            <li><button type="submit">Registro</button>
+            <button type="submit">Borrar</button></li>
+        </form>
+  
+       
+      </ul>
+    </article>
+    </article>
+
+    <article class="inferior">
+      <p class="inferior_parrafo">
+        <b>·Tus zapatos·</b> Empresa dedicada a la venta de zapatos al por mayor y menos desde 1990, puedess visitarnos en nuestra 
+        tienda física en:
+        Madrid, Barcelona, Granada, Palma de Mallorca, consulta la ubicacion <a href=""> aquí.</a>
+        También hacemos envios a domicilio en 24h.
+      </p>
+    </article>
+  </section>
+
+  <!-- *** Google Analytics *** -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>

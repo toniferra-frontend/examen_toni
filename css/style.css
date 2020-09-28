@@ -4,14 +4,14 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
+    font-family: "slash";
+    src: url("../font/slash.woff2") format("woff2"),
+         url("../font/slash.woff") format("woff");
 }
 @font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
+    font-family: "quicksand_book";
+    src: url("../font/quicksand_book.woff2") format("woff2"),
+         url("../font/quicksand_book.woff") format("woff");
 }
 @font-face {
     font-family: "";
@@ -37,6 +37,7 @@
     /* este color se ha utilizado en el boton enviar */
     --color-black: #1C1C1F;
     --color-white: #fff;
+    --color-texto:#C192C6;
 
     /* Tipografía */
     --h1: 4rem;
@@ -50,6 +51,7 @@
     --section-principal: 931px; /* ancho de todo mi diseño 58.188rem */ 
     --section-borderRadius: 60px;
     --box-borderRadius: 40px;
+    --padd:20px;
 }
 
 
