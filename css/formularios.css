@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    margin:10px;
+}
+
+
+.corto{
+    width: 100px;
+}
+pre{
+    text-align: center;
+}
+span{
+    color: red;
+    font-size: 32px;
+
+}
+
+
+

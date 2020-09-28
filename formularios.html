@@ -1,59 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
 
-  </head>
-  <body>
-    <header>
-      <!-- **** Contenido Gráfico **** -->
-      <!-- Primer opción siempre es SVG -->
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- <link rel="stylesheet" href="css/index.css" />-->
+  <link rel="stylesheet" href="css/formularios.css">
+  <!-- Se cambia el tema de algunos navegadores -->
 
-      <!-- Segunda opción siempre WebP -->
-      <!-- Tercera opción es JPG -->
-      <!-- La peor PNG ó GIF -->
-      <!-- SIN RETINA DISPLA -->
-      <picture>
-        <!-- móvil -->
-        <source
-          srcset=""
-          media="(min-width:320px) and (max-width:450px)"
-        />
+  <meta name="theme-color" content="#fafafa" />
 
-        <!-- ipad -->
-        <source
-          srcset="img/tablet/banner.jpg 1x, img/tablet/banner@2x.jpg 2x"
-          media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
-        />
+</head>
 
-        <!-- escritorio -->
-        <source
-          srcset=""
-          media="(min-width:1000px) and (max-width:1366px)"
-        />
+<body>
+  <header>
+    <!-- **** Contenido Gráfico **** -->
+    <!-- Primer opción siempre es SVG -->
 
-        <!-- escritorios Grandes -->
-        <source srcset="" media="(min-width:1367px)" />
+    <!-- Segunda opción siempre WebP -->
+    <!-- Tercera opción es JPG -->
+    <!-- La peor PNG ó GIF -->
+    <!-- SIN RETINA DISPLA -->
+    <picture>
+      <!-- móvil -->
+      <source srcset="
+          img/smartphone/dos_tazas.jpg    1x,
+          img/smartphone/dos_tazas@2x.jpg 2x,
+          img/smartphone/dos_tazas@3x.jpg 3x
+          " media="(min-width:320px) and (max-width:450px)" />
+      <!-- ipad -->
+      <source srcset="img/tablet/una_taza.jpg 1x, img/tablet/una_taza@2x.jpg 2x"
+        media="(min-width:768px) and (max-width:900px)" />
+      <!-- escritorio -->
+      <source srcset="img/desktop/cafe_grano.jpg 1x, img/desktop/cafe_grano@2x.jpg 2x"
+        media="(min-width:1000px) and (max-width:1366px)" />
+      <!-- escritorios Grandes -->
+      <source srcset="img/desktop/banner.jpg" media="(min-width:1367px)" />
+      <!-- Imagen de respaldo -->
+      <img src="img/desktop/cafe_grano.jpg" alt="banner" />
+    </picture>
+  </header>
 
-        <!-- Imagen de respaldo -->
-        <img src="img/desktop/banner.jpg" alt="banner" />
-      </picture>
-    </header>
-    <main>
-      <form name="desayuno" method="POST" data-netlify="true">
-        <label for="azucar">¿Cuántos terrones de azucar te gustan en e café?</label>
-        <input type="number" name="azucar" min="1" max="10">
+  <main>
+    <form name="desayuno" method="POST" data-netlify="true">
+      <section class="nombreapellido">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" autofocus>
 
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido">
+      </section>
 
+      <section class="direccion">
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion">
+      </section>
+
+      <section class="ciudadcp">
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad">
+
+        <label for="codigopostal">C.P.:</label>
+        <input type="text" name="codigopostal" placeholder="12345">
+      </section>
+      <section>
+
+      
+        <label for="gusto"> ¿Te gusta el café?</label>
+        <input type="radio" name="sino" value="si" checked>SI
+        <input type="radio" name="sino" value="no">NO
+        </section>
+
+<section>
+        <label for="cantidad">¿Cuántos tomas al día?:</label>
+        <input class="corto" type="number" min="1" max="10">
+        </section>
         
-      </form>
-    </main>
-  </body>
+
+        <label for="modo">¿Cómo tomas el café?</label>
+        <input type="checkbox" name="solo" value="solo">Solo
+        <input type="checkbox" name="leche" value="leche">Con leche
+        <input type="checkbox" name="hielo" value="hielo">Con hielo
+        <input type="checkbox" name="licor" value="licor">Con licor
+<section>
+        <label for="lugar">De dónde prefieres el café:</label>
+        <select class="corto" name="procedencia" id="">
+          <option value="colombia">Colombia</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="brasil">Brasil</option>
+          <option value="congo">Congo</option>
+        </select>
+        </section>
+        
+        <pre>
+          Rellena todas las casillas
+          y recibirás 1 kilo de café
+          <span>GRATIS</span>
+          del lugar que has indicado
+        </pre>
+     
+
+      <p>Son correctos los datos?<input type="submit" value="enviar"></p>
+      <p>Quieres rectificar algún dato?<input type="reset" value="borrar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+  </main>
+</body>
+
 </html>
