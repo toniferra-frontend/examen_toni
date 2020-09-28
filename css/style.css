@@ -69,11 +69,14 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    
 }
 .superior{
     width: 100%;
     background-color: #fff;
     border-radius: var(--section-borderRadius);
+    display: flex;
+    justify-content: center;
 }
 .inferior{
     width: 90%;
@@ -93,4 +96,18 @@ body{
     border-radius: var(--box-borderRadius);
     color: #fff;
 
+}
+.inferior_parrafo{
+    background-color:var(--color-pink04);
+    border-radius: 0 10px 10px 10px;
+}
+.paypal{
+    color:#8d3b95;
+    background-color:var(--color-pink02);
+}
+li{
+    list-style: none;
+    width: 90%;
+    border-radius: 10px;
+   
 }
